@@ -33,7 +33,7 @@ mixin: {
   beforeUpsert(data, diff), #добавить блокировки
   upsert(data, diff),
   filter(obj): req_builder
-  map(obj): obj 
+  reduce(obj, row): obj # добавляет в итоговый объект необозимые данные 
 }
 
 #вопросы
